@@ -1,0 +1,92 @@
+export const trainingData = [
+    {
+      level: "30-60",
+      map: "Theme Dungeons: Ellinel Fairy Academy, Gold Beach, Riena Strait",
+      monster: "Quest Line",
+      note: "Doing 2 of these will get you to at least level 55.",
+    },
+    {
+      level: "60-70",
+      map: "Silent Swamp",
+      monster: "Drakes",
+      note: "4 Platforms - Popular/Busy",
+    },
+    {
+      level: "70-80",
+      map: "Stairway to the Sky II",
+      monster: "Cellions",
+      note: "High Spawn, Multiple Platforms",
+    },
+    {
+      level: "80-90",
+      map: "Sahel Desert 2",
+      monster: "Sand Rats",
+      note: "Flat, One Level map - Popular/Busy",
+    },
+    {
+      level: "90-100",
+      map: "Authorized Personnel Only",
+      monster: "Satie",
+      note: "Cannot be teleported to - Hidden  Street",
+    },
+    {
+      level: "100-105",
+      map: "Zakum's Altar",
+      monster: "Zakum",
+      note: "Find a Rune and/or use experience modifiers for best results. If you only kill the arms, you can re-enter again in 30 minutes to repeat.",
+    },
+    {
+      level: "105-110",
+      map: "Laboratory B1 Area 3",
+      monster: "Purple Reagent",
+      note: "Flat, One Level Map - High Burning",
+    },
+    {
+      level: "110-125",
+      map: "Tyrant's Castle 3rd Floor Hallway",
+      monster: "Reaper Specter",
+      note: "Flat, One Level Map - High Burning",
+    },
+    {
+      level: "125-134",
+      map: "Black Mountain Entrance",
+      monster: "Moon Bunny",
+      note: "1 Platform and a short platform above. Popular/Busy",
+    },
+    {
+      level: "130-140",
+      map: "Practice Field: Advanced Level",
+      monster: "Wooden Dummies",
+      note: "2 Platform",
+    },
+    {
+      level: "135-140",
+      map: "Red-Nose Pirate Bose",
+      monster: "Captain and Kru's",
+      note: "2 Platform",
+    },
+    {
+      level: "140-150",
+      map: "Keeper's Path 4",
+      monster: "Frenzied Ruins Sentinel",
+      note: "High Spawn, Multiple Platforms",
+    },
+    {
+      level: "150-160",
+      map: "Colossus East Road 3",
+      monster: "Flora/Dark Flora",
+      note: "High burning",
+    },
+    {
+      level: "160-175",
+      map: "Mutant Tino Forest",
+      monster: "Mutant Tino",
+      note: "High burning",
+    },
+    {
+      level: "175-200",
+      map: "Sketchy Back-Alley 1",
+      monster: "Punks",
+      note: "High burning and Spawn but big map",
+    },
+  ];

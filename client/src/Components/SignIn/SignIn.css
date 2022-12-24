@@ -1,0 +1,38 @@
+.log__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: solid 1px lightslategray;
+    height: 70vh;
+    width: 50rem;
+    margin: auto;
+    padding: 2rem;
+    position: relative;
+    top: 30vh;
+}
+
+.sign__in {
+    padding: 1.5vh;
+    border-radius: 10px;
+    border: 1px solid lightslategray;
+}
+
+#sign__in__btn {
+    background-color: #42b72a;
+    color: white;
+    padding: 1.5vh;
+    border-radius: 10px;
+    border: 1px solid lightslategray;
+    cursor: pointer;
+}
+
+#create__acc {
+    background-color: darkorange;
+    color: white;
+    padding: 1.5vh;
+    border-radius: 10px;
+    border: 1px solid lightslategray;
+    cursor: pointer;
+}

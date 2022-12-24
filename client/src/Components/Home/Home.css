@@ -1,0 +1,14 @@
+.home__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 20vh;
+    width: 20vh;
+    margin: auto;
+    position: relative;
+    top: 25vh;
+    border: solid 1px lightslategrey;
+    border-radius: 10px;
+}

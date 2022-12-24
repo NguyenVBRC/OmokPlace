@@ -1,0 +1,70 @@
+.card__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: solid 1px lightslategray;
+    height: 70vh;
+    width: 50rem;
+    margin: auto;
+    padding: 2rem;
+    position: relative;
+    top: 22vh;
+}
+
+/*Link and Legion Search Bar*/
+#search__bar { 
+    width: 150px;
+    margin: 0 auto;
+}
+
+
+/* Links Legion vs Training Areas */
+#container__title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#card__details {
+    border: solid 1px lightslategray;
+    height: 80%;
+    overflow-y: scroll;
+}
+
+/* Hiding Scroll Bar */
+#card__details::-webkit-scrollbar {
+    display: none;
+}
+
+.class__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 1px lightslategrey;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    padding: 1rem;
+}
+
+/* Bolded the Names - Link, Legion, Level, Map, Training On, Note */
+.class__cards span { 
+    font-weight: bold;
+}
+
+/* Underlined Class Job Nmes Ex. Adele, Angelic Buster */
+.class__cards h3 {
+    text-decoration: underline;
+}
+
+
+/* Anchors for levels */
+div#anchor__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 14%;
+    flex-wrap: wrap;
+}
