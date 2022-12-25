@@ -6,24 +6,22 @@ import LinksLegion from "./Components/LinksLegion/LinksLegion";
 import Home from "./Components/Home/Home";
 import SignIn from "./Components/SignIn/SignIn";
 
-const dbConnect = require("./db/dbConnect");
-dbConnect();
+// const dbConnect = require("./db/dbConnect");
+// dbConnect();
 
 import "./App.css"
+import CreateAcc from "./Components/CreateAcc/CreateAcc";
 
 function App() {
   return (
     <div className="main">
       <NavigationBar />
-      {/* <section className="content__container">
-        <LinksLegion />
-        <Training />
-      </section> */}
       <Routes>
-        <Route path="/Omok" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/LinksAndLegion" element={<LinksLegion />} />
         <Route path="/TrainingMaps" element={<Training />} />
         <Route path="/SignIn" element={<SignIn />} />
+        <Route path="/CreateAccount" element={<CreateAcc />} />
       </Routes>
     </div>
   );

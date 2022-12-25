@@ -32,7 +32,7 @@ export default function LinksLegion() {
           onChange={(e) => {setClassName(e.target.value)}}
         />
         <section id='card__details'>
-          <p>{classCards}</p>
+          {classCards}
         </section>
     </main>
   )

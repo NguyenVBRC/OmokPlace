@@ -5,8 +5,7 @@ export default function Training() {
 
   const classCards = trainingData.map((data)=> {
     return (
-      <div className='class__cards' key={data.id} id={`${data.level}`}>
-        <h3>{data.jobTitle}</h3>
+      <div className='class__cards' key={data.level} id={`${data.level}`}>
         <p style={{margin:"0.5rem 0"}}><span id='link'>Level: </span>{data.level}</p>
         <p><span id='legion'>Map: </span>{data.map}</p>
         <p><span id='legion'>Training On: </span>{data.monster}</p>
@@ -17,7 +16,7 @@ export default function Training() {
 
   const trainingAnchorTags = trainingData.map((levels) => {
     return (
-      <a href={`#${levels.level}`}>{levels.level}</a>
+      <a key={levels.map} href={`#${levels.level}`}>{levels.level}</a>
     )
   })
 
@@ -26,7 +25,7 @@ export default function Training() {
         <h1 id='container__title'>Training Areas</h1>
         <div id="anchor__container">{trainingAnchorTags}</div>
         <section id='card__details'>
-          <p>{classCards}</p>
+          {classCards}
         </section>
     </main>
   )

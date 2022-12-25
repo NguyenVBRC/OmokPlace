@@ -35,4 +35,6 @@
     border-radius: 10px;
     border: 1px solid lightslategray;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
 }

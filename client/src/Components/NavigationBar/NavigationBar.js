@@ -21,7 +21,7 @@ export default function NavigationBar() {
             <p>A MapleStory Resource Page</p>
           </header>
           <div id='nav__links'>
-            <Link to="/Omok">Home</Link>
+            <Link to="/">Home</Link>
             <Link to="/LinksAndLegion">Links Legion</Link>
             <Link to="/TrainingMaps">Training</Link>
             <Link to="/SignIn">Sign In</Link>
