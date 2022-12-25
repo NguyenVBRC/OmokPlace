@@ -2,7 +2,12 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 
-const uri = "mongodb+srv://Test123:Test123pw@cluster0.ujggnnh.mongodb.net/?retryWrites=true&w=majority"
+const uri = "mongodb+srv://Test123:TestDeezCandice123@cluster0.ujggnnh.mongodb.net/?retryWrites=true&w=majority"
+
+const accountSchema = {
+    name: String,
+    password: String
+}
 
 async function connect() {
     try {
