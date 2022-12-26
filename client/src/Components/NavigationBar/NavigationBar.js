@@ -24,6 +24,7 @@ export default function NavigationBar() {
             <Link to="/">Home</Link>
             <Link to="/LinksAndLegion">Links Legion</Link>
             <Link to="/TrainingMaps">Training</Link>
+            <Link to="/CashShopSharedInventory">Shared CS</Link>
             <Link to="/SignIn">Sign In</Link>
           </div>
       </nav>

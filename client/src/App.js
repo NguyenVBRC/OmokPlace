@@ -5,6 +5,7 @@ import Training from "./Components/Training/Training";
 import LinksLegion from "./Components/LinksLegion/LinksLegion";
 import Home from "./Components/Home/Home";
 import SignIn from "./Components/SignIn/SignIn";
+import SharedInventory from "./Components/SharedInventory/SharedInventory";
 
 // const dbConnect = require("./db/dbConnect");
 // dbConnect();
@@ -22,6 +23,7 @@ function App() {
         <Route path="/TrainingMaps" element={<Training />} />
         <Route path="/SignIn" element={<SignIn />} />
         <Route path="/CreateAccount" element={<CreateAcc />} />
+        <Route path="/CashShopSharedInventory" element={<SharedInventory />} />
       </Routes>
     </div>
   );

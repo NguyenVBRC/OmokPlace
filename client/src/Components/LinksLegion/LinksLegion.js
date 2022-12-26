@@ -15,7 +15,7 @@ export default function LinksLegion() {
   }).map((data)=> {
     return (
       <div className='class__cards' key={data.id}>
-        <h3>{data.jobTitle}</h3>
+        <h1>{data.jobTitle}</h1>
         <p style={{margin:"0.5rem 0"}}><span id='link'>Link: </span>{data.linkSkill}</p>
         <p><span id='legion'>Legion: </span>{data.legionCard}</p>
       </div>

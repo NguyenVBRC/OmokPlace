@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import CreateAcc from '../CreateAcc/CreateAcc';
-import "./SignIn.css"
+import "../SignIn.css"
 
 export default function SignIn() {
 
