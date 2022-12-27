@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 const uri =
-  "mongodb+srv://Test123:@cluster0.ujggnnh.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://Test123:TestDeezCandice123@cluster0.ujggnnh.mongodb.net/?retryWrites=true&w=majority";
 
 const accountSchema = {
   name: String,
@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/signup", function (req, res) {
-  console.log(req.body.username, req.body.password);
+  console.log(req);
   res.end();
 });
 
