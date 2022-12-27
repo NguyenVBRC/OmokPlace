@@ -4,12 +4,9 @@ import "./SharedInventory.css"
 
 export default function SharedInventory() {
 
-    const [ className, setClassName ] = useState("");
-
     const sharedInventory = cashShopInventory.map((shared)=>{
         return (
             <div className='inventory__details'>
-                <h1>{Object.keys(shared)}</h1>
             </div>
         )
     });
@@ -20,7 +17,7 @@ export default function SharedInventory() {
         <p>
             Only certain class types share a Cash Shop inventory. Below are the classes share this inventory.
         </p>
-        {sharedInventory}
+        {/* {sharedInventory} */}
     </div>
   )
 }

@@ -6,7 +6,7 @@ export default function CreateAcc() {
   const [newAccount, setNewAccount] = useState({
     username: "",
     password: "",
-    confirmPass: "",
+    confirmPass: ""
   });
 
   function accountInfo(e) {
@@ -16,23 +16,27 @@ export default function CreateAcc() {
     });
   }
 
+  async function sendLoginInfo() {
+    fetch("http://localhost:8000/signup", {
+      method: 'POST',
+      mode: 'cors',
+      // body: JSON.stringify(newAccount)
+      body: {"username":"Test","password":"Cadena","confirmPass":"Cadena"}
+    });
+  }
+
   function handleSubmit(e) {
     e.preventDefault();
     if (newAccount.password !== newAccount.confirmPass) {
       setPassCheck("Passwords do not match.");
       console.log(newAccount);
     } else {
-      // Post Request to server
-      console.log(newAccount);
+      setPassCheck("Success!")
+      sendLoginInfo() // Post Request
+      console.log(JSON.stringify(newAccount));
     }
   }
-
-  async function sendLoginInfo() {
-    fetch("localhost:8000");
-    const result = await fetch("localhost:8000");
-    console.log(result);
-  }
-
+  
   return (
     <form
       className="log__container"
@@ -67,7 +71,11 @@ export default function CreateAcc() {
         id="confirmPass"
       />
       <p style={{ textAlign: "center", color: "red" }}>{passCheck}</p>
-      <button onClick={handleSubmit} type="submit" id="sign__in__btn">
+      <button 
+        onClick={handleSubmit} 
+        type="submit" 
+        id="sign__in__btn"
+      >
         Create Account
       </button>
     </form>
