@@ -9,13 +9,15 @@ export default function NavigationBar() {
   return (
     <>
       <nav className='nav__bar'>
-          <img 
-            src={require(`../../images/mushroom.${imageType}`)} 
-            id="nav__logo" 
-            alt="Mushroom Mascot"
-            onMouseEnter={()=>setImageType('gif')}
-            onMouseLeave={()=>setImageType('png')}
-          />
+          <Link to="/">
+            <img 
+              src={require(`../../images/mushroom.${imageType}`)} 
+              id="nav__logo" 
+              alt="Mushroom Mascot"
+              onMouseEnter={()=>setImageType('gif')}
+              onMouseLeave={()=>setImageType('png')}
+            />
+          </Link>
           <header className='nav__title'>
             <h1>Omok</h1>
             <p>A MapleStory Resource Page</p>
@@ -25,7 +27,7 @@ export default function NavigationBar() {
             <Link to="/LinksAndLegion">Links Legion</Link>
             <Link to="/TrainingMaps">Training</Link>
             <Link to="/CashShopSharedInventory">Shared CS</Link>
-            <Link to="/SignIn">Sign In</Link>
+            <Link to="/SignIn" style={{backgroundColor:"#42b72a", color:"white"}}>Sign In</Link>
           </div>
       </nav>
       <img src={require("../../images/banner.png")} id="banner" alt="Reddit Banner"/>

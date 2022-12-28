@@ -16,12 +16,11 @@ export default function CreateAcc() {
     });
   }
 
-  async function sendLoginInfo() {
+  function sendLoginInfo() {
     fetch("http://localhost:8000/signup", {
       method: 'POST',
       mode: 'cors',
-      // body: JSON.stringify(newAccount)
-      body: {"username":"Test","password":"Cadena","confirmPass":"Cadena"}
+      body: JSON.stringify(newAccount)
     });
   }
 
@@ -32,8 +31,8 @@ export default function CreateAcc() {
       console.log(newAccount);
     } else {
       setPassCheck("Success!")
-      sendLoginInfo() // Post Request
       console.log(JSON.stringify(newAccount));
+      sendLoginInfo() // Post Request
     }
   }
   

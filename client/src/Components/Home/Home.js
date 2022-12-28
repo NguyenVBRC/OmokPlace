@@ -6,7 +6,11 @@ export default function Home() {
   return (
     <main className='home__container'>
         <h1>Contents</h1>
-        {/* <LinksLegion /> */}
+        <p>Links and Legion</p>
+        <p>Training Maps</p>
+        <p>Shared Cash Shop List</p>
+        <p>Prequests</p>
+        <p>FAQ's</p>
     </main>
   )
 }
