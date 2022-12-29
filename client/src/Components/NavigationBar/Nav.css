@@ -56,9 +56,59 @@
     background-color: lightcyan;
 }
 
+#menu__icon {
+    display: none;
+    width: 30px;
+    position: relative;
+    right: 2vh;
+    cursor: pointer;
+}
+
+.side__bar {
+    display: none;
+    flex-direction: column;
+    background: lightslategray;
+    height: 100vh;
+    width: 30vh;
+    position: absolute;
+    top: 6vh;
+    right: 0;
+    padding: 2rem;
+}
+
+.side__bar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    height: 75px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.side__bar a:hover {
+    background-color: rgb(67, 111, 161);
+}
+
 #banner {
     height: 100px;
     width: 100%;
     position: absolute;
     top: 6vh;
+}
+
+@media (max-width: 1100px){
+    #nav__links {
+        display: none;
+    }
+
+    #menu__icon {
+        display: block
+    }
+
+    .side__bar {
+        /* display: flex; */
+    }
 }

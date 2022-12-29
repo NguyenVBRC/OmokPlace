@@ -20,8 +20,11 @@ export default function CreateAcc() {
     fetch("http://localhost:8000/signup", {
       method: 'POST',
       mode: 'cors',
-      body: JSON.stringify(newAccount)
-    });
+      body: JSON.stringify(newAccount),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    })
   }
 
   function handleSubmit(e) {
