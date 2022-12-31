@@ -1,16 +1,49 @@
 import React from 'react';
+import { Link } from "react-router-dom"
+import { classLinksLegion } from '../../Data/LinksLegionData';
 import "./Home.css"
-import LinksLegion from '../LinksLegion/LinksLegion';
+import legion from "../../images/legion.png"
+import hhg1 from "../../images/hhg1.png"
+import cashshop from "../../images/cashshop.png"
 
 export default function Home() {
+
+  const linksDisplay = classLinksLegion.map((data)=> {
+    return (
+      <div>
+        <p key={data.jobTitle}>{data.jobTitle}</p>
+      </div>
+    )
+  })
+
   return (
-    <main className='home__container'>
-        <h1>Contents</h1>
-        <p>Links and Legion</p>
-        <p>Training Maps</p>
-        <p>Shared Cash Shop List</p>
-        <p>Prequests</p>
-        <p>FAQ's</p>
+    <main className='grid__container'>
+        <section className='content__display'>
+          <Link to="/LinksAndLegion">
+            <h1>Links and Legion</h1>
+            <div className='inner__display'>
+              <img src={legion} alt="legion card" />
+            </div>
+          </Link>
+        </section>
+
+      <section  className='content__display'>
+        <Link to="/TrainingMaps">
+          <h1>Training Maps</h1>
+          <div className='inner__display'>
+            <img src={hhg1} alt="legion card" />
+          </div>
+        </Link>
+      </section>
+
+      <section  className='content__display'>
+        <Link to="/CashShopSharedInventory">
+          <h1>Shared Cash Shop</h1>
+          <div className='inner__display'>
+            <img src={cashshop} alt="legion card" />
+          </div>
+        </Link>
+      </section>
     </main>
   )
 }

@@ -4,12 +4,7 @@ import "./Nav.css"
 
 export default function NavigationBar() {
   
-  const [ imageType, setImageType ] = useState('png')
-  const [ sideBar, setSideBar ] = useState(false)
-
-  function toggleSideBar(){
-    setSideBar(prevSideBar => !prevSideBar)
-  }
+  const [ imageType, setImageType ] = useState('png');
 
   return (
     <>
@@ -34,21 +29,27 @@ export default function NavigationBar() {
             <Link to="/CashShopSharedInventory">Shared CS</Link>
             <Link to="/SignIn" style={{backgroundColor:"#42b72a", color:"white"}}>Sign In</Link>
           </div>
-          <img 
-            src={require('../../images/menu-icon.png')} 
-            alt="menu" 
-            id='menu__icon'
-            onClick={toggleSideBar}
-          />
-          <div className='side__bar'
-            style={{display: sideBar ? "flex" : "none", alignItems: "center"}}
-            onMouseOut={toggleSideBar}
-          >
-            <Link to="/">Home</Link>
-            <Link to="/LinksAndLegion">Links Legion</Link>
-            <Link to="/TrainingMaps">Training</Link>
-            <Link to="/CashShopSharedInventory">Shared CS</Link>
-            <Link to="/SignIn">Sign In</Link>
+          <div className='side__bar'>
+            <Link to="/">
+              <img src={require("../../images/home.png")} alt="home"/>
+              <span>Home</span>
+            </Link>
+            <Link to="/LinksAndLegion">
+              <img src={require("../../images/link.png")} alt="link"/>
+              <span>Links and Legion</span>
+            </Link>
+            <Link to="/TrainingMaps">
+              <img src={require("../../images/maps.png")} alt="training maps"/>
+              <span>Training Maps</span>
+            </Link>
+            <Link to="/CashShopSharedInventory">
+              <img src={require("../../images/storage.png")} alt="cash shop storage"/>
+              <span>Shared Cash Shop</span>
+            </Link>
+            <Link to="/SignIn">
+              <img src={require("../../images/profile.png")} alt="profile"/>
+              <span>Log In</span>
+            </Link>
           </div>
       </nav>
       <img src={require("../../images/banner.png")} id="banner" alt="Reddit Banner"/>

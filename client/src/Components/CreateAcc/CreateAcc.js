@@ -8,7 +8,7 @@ export default function CreateAcc() {
     password: "",
     confirmPass: ""
   });
-
+  
   function accountInfo(e) {
     setNewAccount({
       ...newAccount,
@@ -35,7 +35,7 @@ export default function CreateAcc() {
     } else {
       setPassCheck("Success!")
       console.log(JSON.stringify(newAccount));
-      sendLoginInfo() // Post Request
+      sendLoginInfo() 
     }
   }
   
