@@ -93,7 +93,7 @@
 
 .side__bar img {
     height: 30px;
-    margin: 0.75rem;
+    margin: 0.6rem;
 }
 
 .side__bar:hover img {
@@ -115,7 +115,7 @@
     height: 100px;
     width: 100%;
     position: absolute;
-    top: 6vh;
+    top: 5vh;
 }
 
 @media (max-width: 1300px){
