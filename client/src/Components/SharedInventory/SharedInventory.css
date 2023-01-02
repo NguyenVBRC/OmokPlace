@@ -21,3 +21,17 @@
     border: solid 1px lightslategray;
     border-radius: 10px;
 }
+
+@media (max-width: 1300px){
+    .inventory__container {
+        top: 25vh;
+        height: 70vh;
+        overflow-y: scroll;
+        box-shadow: inset 0px -10px 10px -5px #888888;
+    }
+
+    /* Hiding Scroll Bar */
+    .inventory__container::-webkit-scrollbar {
+        display: none;
+    }
+}

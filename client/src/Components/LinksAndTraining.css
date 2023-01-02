@@ -68,3 +68,9 @@ div#anchor__container {
     height: 14%;
     flex-wrap: wrap;
 }
+
+@media (max-width:1300px){
+    .card__container {
+        top: 25vh;
+    }
+}
