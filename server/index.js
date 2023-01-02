@@ -2,18 +2,14 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const app = express();
-// const dotenv = require('dotenv')
+require("dotenv").config();
 
-// import * as dotenv from "dotenv";
-// require("dotenv").config();
-
-// DB_KEY = process.env.MONGO_KEY
+DB_KEY = process.env.MONGO_KEY;
 
 app.use(cors());
 app.use(express.json());
 
-const uri =
-  `mongodb+srv://Test123:@cluster0.ujggnnh.mongodb.net/?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://Test123:${DB_KEY}@cluster0.ujggnnh.mongodb.net/?retryWrites=true&w=majority`;
 
 const accountSchema = {
   name: String,
