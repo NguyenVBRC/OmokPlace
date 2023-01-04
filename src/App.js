@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
-import NavigationBar from "/Components/NavigationBar/NavigationBar";
+import NavigationBar from "./Components/NavigationBar/NavigationBar";
 import Training from "./Components/Training/Training";
 import LinksLegion from "./Components/LinksLegion/LinksLegion";
 import Home from "./Components/Home/Home";
