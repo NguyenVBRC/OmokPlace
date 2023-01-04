@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
-import NavigationBar from "./Components/NavigationBar/NavigationBar";
+import NavigationBar from "/Components/NavigationBar/NavigationBar";
 import Training from "./Components/Training/Training";
 import LinksLegion from "./Components/LinksLegion/LinksLegion";
 import Home from "./Components/Home/Home";
@@ -16,11 +16,11 @@ function App() {
       <NavigationBar />
       <Routes>
         <Route path="/OmokPlace" element={<Home />} />
-        <Route path="./LinksAndLegion" element={<LinksLegion />} />
-        <Route path="./TrainingMaps" element={<Training />} />
-        <Route path="./SignIn" element={<SignIn />} />
-        <Route path="./CreateAccount" element={<CreateAcc />} />
-        <Route path="./CashShopSharedInventory" element={<SharedInventory />} />
+        <Route path="/LinksAndLegion" element={<LinksLegion />} />
+        <Route path="/TrainingMaps" element={<Training />} />
+        <Route path="/SignIn" element={<SignIn />} />
+        <Route path="/CreateAccount" element={<CreateAcc />} />
+        <Route path="/CashShopSharedInventory" element={<SharedInventory />} />
       </Routes>
     </div>
   );

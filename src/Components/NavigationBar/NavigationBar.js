@@ -24,10 +24,10 @@ export default function NavigationBar() {
           </header>
           <div id='nav__links'>
             <Link to="/OmokPlace">Home</Link>
-            <Link to="./LinksAndLegion">Links Legion</Link>
-            <Link to="./TrainingMaps">Training</Link>
-            <Link to="./CashShopSharedInventory">Shared CS</Link>
-            <Link to="./SignIn" style={{backgroundColor:"#42b72a", color:"white"}}>Sign In</Link>
+            <Link to="/LinksAndLegion">Links Legion</Link>
+            <Link to="/TrainingMaps">Training</Link>
+            <Link to="/CashShopSharedInventory">Shared CS</Link>
+            <Link to="/SignIn" style={{backgroundColor:"#42b72a", color:"white"}}>Sign In</Link>
           </div>
           <div className='side__bar'>
             <Link to="/">
