@@ -9,7 +9,7 @@ export default function NavigationBar() {
   return (
     <>
       <nav className='nav__bar'>
-          <Link to="/">
+          <Link to="/OmokPlace">
             <img 
               src={require(`../../images/mushroom.${imageType}`)} 
               id="nav__logo" 
@@ -30,7 +30,7 @@ export default function NavigationBar() {
             <Link to="/SignIn" style={{backgroundColor:"#42b72a", color:"white"}}>Sign In</Link>
           </div>
           <div className='side__bar'>
-            <Link to="/">
+            <Link to="/OmokPlace">
               <img src={require("../../images/home.png")} alt="home"/>
               <span>Home</span>
             </Link>
