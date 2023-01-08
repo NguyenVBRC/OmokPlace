@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/OmokPlace/static/css/main.e8f15005.css",
+    "main.css": "/OmokPlace/static/css/main.d58b0afe.css",
     "main.js": "/OmokPlace/static/js/main.df84f221.js",
     "static/media/maplestory-background.png": "/OmokPlace/static/media/maplestory-background.ee91ad4ba4b0f6ca459f.png",
     "static/media/banner.png": "/OmokPlace/static/media/banner.17c1c6efa944029b4485.png",
@@ -13,11 +13,11 @@
     "static/media/storage.png": "/OmokPlace/static/media/storage.22e11ec76e421c33a144.png",
     "static/media/mushroom.png": "/OmokPlace/static/media/mushroom.b1dbe45882f7406a779a.png",
     "index.html": "/OmokPlace/index.html",
-    "main.e8f15005.css.map": "/OmokPlace/static/css/main.e8f15005.css.map",
+    "main.d58b0afe.css.map": "/OmokPlace/static/css/main.d58b0afe.css.map",
     "main.df84f221.js.map": "/OmokPlace/static/js/main.df84f221.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8f15005.css",
+    "static/css/main.d58b0afe.css",
     "static/js/main.df84f221.js"
   ]
 }
