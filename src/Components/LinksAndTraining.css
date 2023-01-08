@@ -19,7 +19,6 @@
     margin: 0 auto;
 }
 
-
 /* Links Legion vs Training Areas */
 #container__title {
     display: flex;
@@ -72,5 +71,25 @@ div#anchor__container {
 @media (max-width:1300px){
     .card__container {
         top: 25vh;
+    }
+}
+
+@media (max-width:600px){
+    .card__container {
+        width: 80%;
+        margin: 0 1rem;
+    }
+
+    div#anchor__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25%;
+        width: 85%;
+        margin: auto;
+    }
+
+    div#anchor__container a {
+        margin: 0 0.5rem;
     }
 }
